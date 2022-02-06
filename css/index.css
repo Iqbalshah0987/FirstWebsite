@@ -1,0 +1,146 @@
+@import 'utilities.css';
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: var(--white);
+}
+.container{
+    display: flex;
+}
+.sidebar{
+    background-color: var(--chocolate);
+    width: 300px;
+    font-family: var(--font-1);
+    height: 100vh;
+    transition: all .5s ease-in;
+    z-index: 1;
+}
+.sidebar nav{
+    padding-left: 30px;
+    padding-top: 30px;
+}
+/* .sidebar nav li img{
+    width: 30px;
+} */
+.sidebar nav li{
+    list-style: none;
+    padding: 10px 0;
+    margin: 30px auto;
+    width: 100%;
+    border-bottom-left-radius: 20px;
+    border-top-left-radius: 20px;
+    position: relative;
+}
+.sidebar nav ul li:hover{
+    background-color: var(--white);
+    color: var(--chocolate);
+}
+.sidebar nav li a{
+    text-decoration: none;
+    color: var(--white);
+    font-size: 25px;
+    padding-left: 20px;
+    padding-right: 100px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.sidebar nav ul li:hover a:hover{
+    /* background-color: var(--chocolate);; */
+    color: var(--chocolate);
+}
+.sidebar nav li:hover a::before{
+    content: '';
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background: transparent;
+    top: -50px;
+    right: 0px;
+    border-radius: 50%;
+    box-shadow: 35px 35px 0 8px  var(--white);
+}
+.sidebar nav li:hover a::after{
+    content: '';
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background: transparent;
+    bottom: -50px;
+    right: 0px;
+    border-radius: 50%;
+    box-shadow: 35px -35px 0 8px  var(--white);
+}
+.main{
+    background-color: var(--white);
+    width: 100%;
+}
+.main .infoContainer{
+    /* background-color:purple; */
+    height: 50vh;
+    width: 75vw;
+    margin: 100px auto;
+    display: flex;
+    justify-content: space-around;
+    margin-left: 50px;
+}
+.main .infoContainer .devInfo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: var(--font-2);
+}
+.main .infoContainer .devInfo .hello{
+    font-size: 50px;
+}
+.main .infoContainer .devInfo .name{
+    font-size: 35px;
+    font-weight: bold;
+    font-family: var(--font-1);
+}
+.main .infoContainer .devInfo .about{
+    font-size: 25px;
+}
+.main .infoContainer .devInfo .moreabout{
+    font-size: 18px;
+    font-family: var(--font-1);
+    margin-top: 15px;
+}
+.main .infoContainer .devInfo .buttons{
+    margin-top: 30px;
+}
+.main .infoContainer .devPic img{
+    height: 50vh;
+}
+
+.hamberger{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+.hamberger .ham-btn-1,.ham-btn-2{
+    cursor: pointer;
+}
+.hamberger .ham-btn-2{
+    position: absolute;
+    right: -220px;
+    z-index: 2;
+}
+.hamberger img{
+    width: 23px;
+    outline: 2px;
+}
+
+.sidebargo{
+    transform: translateX(-300%);
+    position: absolute;
+}
+
+@media (max-width: 1200px){
+    /* .sidebar{
+        transform: translateX(-100%);
+        position: absolute;
+    } */
+}

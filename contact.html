@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/contact.css">
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar sidebargo">
+            <nav>
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/intro.html">Intro</a></li>
+                    <li><a href="/services.html">services</a></li>
+                    <li><a href="/blog.html">Blog</a></li>
+                    <li><a href="/contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="main">
+            <div class="hamberger">
+                <button class="ham-btn-1"><img src="./images/hamberger.svg" alt="" class="ham"></button>
+                <button class="ham-btn-2"><img src="./images/times.svg" alt="" class="cross"></button>  
+            </div>
+            <div class="contactform">
+                <h1>Contact me for work/general Enquiry.</h1>
+                <form action="#">
+                    <div class="mb-3">
+                        <label for="name" class="form-label">Name</label>
+                        <input type="text" class="form-control" id="clientname" placeholder="Name">
+                    </div>
+                    <div class="mb-3">
+                        <label for="clientemail" class="form-label">Email Address</label>
+                        <input type="email" class="form-control" id="clientemail" aria-describedby="emailHelp" placeholder="contact@gmail.com">
+                        <div id="emailHelp" class="form-text">We'll never share your email & phone with anyone else.</div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="clientphone" class="form-label">Phone</label>
+                        <input type="phone" class="form-control" id="clientphone" placeholder="+91 ">
+                    </div>
+                    <div class="mb-3">
+                        <textarea name="" id="" cols="30" rows="10" placeholder="Describe What You want...."></textarea>
+                    </div>
+                    <div class="mb-3 form-check">
+                        <input type="checkbox" class="form-check-input" id="isclient">
+                        <label for="examplecheck1" class="isclient">You want to work with me.</label>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+            </div>  
+        </div>
+    </div>
+    <script src="./js/index.js"></script>
+</body>
+</html>

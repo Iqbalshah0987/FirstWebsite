@@ -1,0 +1,11 @@
+@import 'index.css';
+@import 'utilities.css';
+
+.main .blogcontainer{
+    margin: 20px;
+}
+.blogitem{
+    margin: 20px;
+    font-family: var(--font-1);
+    margin: 20px;
+}

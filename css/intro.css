@@ -1,0 +1,46 @@
+@import 'index.css';
+@import 'utilies.css';
+
+.information-Container{
+    margin-left: 40px;
+    margin-top: 10px;
+}
+.skillcontainer{
+    margin-top: 10px;
+    margin-left: 10px;
+}
+.skillcontainer .skillitem{
+    display: flex;
+    align-items: center;
+    font-family: var(--font-2);
+    font-weight: 600;
+}
+.skillcontainer .skillitem span{
+    margin: 10px;
+    padding-right: 20px;
+}
+.skillcontainer .skillitem .skill{
+    /* width: 200px; */
+    height: 10px;
+    /* background-color: red; */
+}
+.seventyfive{
+    width: 75%;
+    background-color: green;
+}
+.seventy{
+    width: 70%;
+    background-color: grey;
+}
+.sixty{
+    width: 60%;
+    background-color: yellow;
+}
+.fifty{
+    width: 50%;
+    background-color: rebeccapurple;
+}
+.fourty{
+    width: 40%;
+    background-color: red;
+}
